@@ -43,8 +43,10 @@ class KnowledgeGraphBuilder:
         self.hasSize = rdflib.URIRef('http://example.com/locobot/hasSize#')
         self.counter = 0
         self.timer = 0
+        self.recordings = 100
         self.done = False
         self.image = None
+        self.data = None
 
         self.recordedGraphs = []
 
@@ -59,18 +61,33 @@ class KnowledgeGraphBuilder:
 
     def logical_camera_callback(self, data):
         # Extract information from LogicalCameraImage
-        self.graph = rdflib.Graph()
+        self.data = data
+        self.graph = self.construct_graph()
+
+
+
+        self.timer += 1
+        self.recordedGraphs.append((self.graph, ts))
+        if self.image is not None and not self.done:
+            cv2.imwrite(img_name, self.image)
+            rospy.loginfo('Image saved')
+
+        if self.timer == self.recordings:
+            self.save_stream()
+            rospy.loginfo("Done") 
+            self.done = True
+
+    def construct_graph(self, data):
         # Get current time and date
         ts = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S-%f")
         rospy.loginfo(self.dir)
         # Create filename with current time and date
         timestamp = rdflib.Literal(ts)
         img_name = 'streams/images/image' + str(timestamp) + '.jpg'
-        imgNode = rdflib.Literal(img_name)
+        imgNode = rdflib.URIRef('http://example.com/locobot/images#' + img_name)
         self.graph.add((timestamp, self.rdf.type, self.sosa.ResultTime))
         pan_joint_value = rdflib.Literal(self.panValue)
         self.graph.add((imgNode, self.time.hasTime, timestamp))
-        self.graph.add((pan_joint_value, self.rdf.type, self.sosa.Observation))
         self.graph.add((self.pan, self.hasJointValue, pan_joint_value))
         self.graph.add((pan_joint_value, self.time.hasTime, timestamp))
         self.graph.add((self.pan, self.rdf.type, self.sosa.Actuator))
@@ -91,16 +108,8 @@ class KnowledgeGraphBuilder:
             self.graph.add((subj, self.hasSize, size))
             self.counter += 1
 
-        self.timer += 1
-        self.recordedGraphs.append((self.graph, ts))
-        if self.image is not None and not self.done:
-            cv2.imwrite(img_name, self.image)
-            rospy.loginfo('Image saved')
-        if self.timer == 100:
-            self.save_stream()
-            rospy.loginfo("Done") 
-            self.done = True
-
+    def save_kg(self):
+        pass
 
     def save_stream(self):
         csv_file = "streams/stream_reasoning_bsc.csv"
