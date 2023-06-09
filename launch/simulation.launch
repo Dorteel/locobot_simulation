@@ -9,7 +9,7 @@
   <arg name="external_urdf_loc"                 default=""/>
   <arg name="use_rviz"                          default="true"/>
   <arg name="rviz_frame"                        default="$(arg robot_name)/base_footprint"/>
-  <arg name="world_name"                        default="$(find locobot_simulation)/worlds/room_trash.world"/>
+  <arg name="world_name"                        default="$(find locobot_simulation)/worlds/bsc_trash.world"/>
   <arg name="gui"                               default="true"/>
   <arg name="debug"                             default="false"/>
   <arg name="paused"                            default="true"/>
