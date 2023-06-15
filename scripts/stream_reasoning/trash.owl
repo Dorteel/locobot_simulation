@@ -209,6 +209,15 @@
     
 
 
+    <!-- http://webprotege.stanford.edu/R7SLrXciGGIROd3MAcPHSEF -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7SLrXciGGIROd3MAcPHSEF">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBmM7ZW2pUHqqPrROBJ3YKq"/>
+        <rdfs:label xml:lang="en">Beer</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://webprotege.stanford.edu/R7Tf1ROl00VviR2R9t0PKpd -->
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/R7Tf1ROl00VviR2R9t0PKpd">
@@ -263,6 +272,15 @@
     
 
 
+    <!-- http://webprotege.stanford.edu/R7i58zpys5WbCYiqXQutJ7 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7i58zpys5WbCYiqXQutJ7">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7Xy7VqI1Ca5ESCOBQvb5I9"/>
+        <rdfs:label xml:lang="en">Cafe</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://webprotege.stanford.edu/R7j35dgpaerUxIViTub9Zqn -->
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/R7j35dgpaerUxIViTub9Zqn">
@@ -295,6 +313,15 @@
     <owl:Class rdf:about="http://webprotege.stanford.edu/R7oKEUNHeN7cTcTJICRJbHL">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9wxSLBm7koiff9mLWXNuxl"/>
         <rdfs:label xml:lang="en">Rectangular</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7qvpoTFFVoBi6J6LRLMxJt -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7qvpoTFFVoBi6J6LRLMxJt">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9P4rblR2BeJYFvdSacPS0F"/>
+        <rdfs:label xml:lang="en">Height</rdfs:label>
     </owl:Class>
     
 
@@ -362,6 +389,15 @@
     
 
 
+    <!-- http://webprotege.stanford.edu/R8FID7iAbg9ls9YrhhvgFPm -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8FID7iAbg9ls9YrhhvgFPm">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCeV1ZKU9OBOalkrtYg4yXX"/>
+        <rdfs:label xml:lang="en">Lemon</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://webprotege.stanford.edu/R8HbpOfkhthTbqNfyp6HwjI -->
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/R8HbpOfkhthTbqNfyp6HwjI">
@@ -394,6 +430,15 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Physical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8KuHKp8ZnpTz0JgGwYAFmf -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8KuHKp8ZnpTz0JgGwYAFmf">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rzt5aQUAcyi1YQ9QpiC8lQ"/>
+        <rdfs:label xml:lang="en">Can</rdfs:label>
     </owl:Class>
     
 
@@ -535,6 +580,15 @@
     <owl:Class rdf:about="http://webprotege.stanford.edu/R9Oi64HLtPHjsemHLH3Qhfy">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBmM7ZW2pUHqqPrROBJ3YKq"/>
         <rdfs:label xml:lang="en">Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9P4rblR2BeJYFvdSacPS0F -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9P4rblR2BeJYFvdSacPS0F">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RhRDzWota6usMOn3w6utws"/>
+        <rdfs:label xml:lang="en">Size</rdfs:label>
     </owl:Class>
     
 
@@ -997,11 +1051,29 @@
     
 
 
+    <!-- http://webprotege.stanford.edu/RCm0VvmOS61XrrymfdVDCAz -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCm0VvmOS61XrrymfdVDCAz">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCeV1ZKU9OBOalkrtYg4yXX"/>
+        <rdfs:label xml:lang="en">Peach</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://webprotege.stanford.edu/RCofUR8mpSt4OJ7uRCOsB9V -->
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/RCofUR8mpSt4OJ7uRCOsB9V">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8Xk2JAdRC7tRoQ63BLs7A2"/>
         <rdfs:label xml:lang="en">Cell phone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCqiOdkGeKd3LqEKIXsYnZh -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCqiOdkGeKd3LqEKIXsYnZh">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBmM7ZW2pUHqqPrROBJ3YKq"/>
+        <rdfs:label xml:lang="en">Milk</rdfs:label>
     </owl:Class>
     
 
@@ -1051,11 +1123,29 @@
     
 
 
+    <!-- http://webprotege.stanford.edu/RDI2leQuqlkrDq6aH5xCuL9 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDI2leQuqlkrDq6aH5xCuL9">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9P4rblR2BeJYFvdSacPS0F"/>
+        <rdfs:label xml:lang="en">Width</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://webprotege.stanford.edu/RDIyhmCXvCqICdpMqk9fI5F -->
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/RDIyhmCXvCqICdpMqk9fI5F">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9wxSLBm7koiff9mLWXNuxl"/>
         <rdfs:label xml:lang="en">Triangular</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDJ4KJaH609bVd5TR720CML -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDJ4KJaH609bVd5TR720CML">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBmM7ZW2pUHqqPrROBJ3YKq"/>
+        <rdfs:label xml:lang="en">Salt</rdfs:label>
     </owl:Class>
     
 
@@ -1097,6 +1187,15 @@
     <owl:Class rdf:about="http://webprotege.stanford.edu/RDfwIVnudA7LLv2TmyvqkFP">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rsylb2P7HBl2uJirbVbpVf"/>
         <rdfs:label xml:lang="en">Fire Hydrant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDgYufVsM1aFSutqlx3rmj6 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDgYufVsM1aFSutqlx3rmj6">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9P4rblR2BeJYFvdSacPS0F"/>
+        <rdfs:label xml:lang="en">Length</rdfs:label>
     </owl:Class>
     
 
@@ -1146,6 +1245,15 @@
         <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LDPE</skos:altLabel>
         <skos:definition xml:lang="en">A softer, clearer, and more flexible version of HDPE. It’s often used as a liner inside beverage cartons, and in corrosion-resistant work surfaces and other products.</skos:definition>
         <skos:example xml:lang="en">Plastic/cling wrap, sandwich and bread bags, bubble wrap, garbage bags, grocery bags and beverage cups.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RFNniCGnYdZKUjzIQVRMS4 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RFNniCGnYdZKUjzIQVRMS4">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCeV1ZKU9OBOalkrtYg4yXX"/>
+        <rdfs:label xml:lang="en">Strawberry</rdfs:label>
     </owl:Class>
     
 
@@ -1247,6 +1355,15 @@
     <owl:Class rdf:about="http://webprotege.stanford.edu/RTmBIYFQJ9SIBCVTMzYspb">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9STkmxNXbezpcQSd9kpvTq"/>
         <rdfs:label xml:lang="en">Snowboard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RUIQIOvFrvfYeaRONlOLWe -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RUIQIOvFrvfYeaRONlOLWe">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RhRDzWota6usMOn3w6utws"/>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
     </owl:Class>
     
 

@@ -11,6 +11,8 @@ import csv
 import datetime
 import os
 
+import pprint
+
 class KnowledgeGraphBuilder:
     def __init__(self):
         # Initialize node
@@ -20,7 +22,6 @@ class KnowledgeGraphBuilder:
         rospy.Subscriber('/gazebo/locobot/camera/logical_camera_image', LogicalImage, self.logical_camera_callback)
         rospy.Subscriber('/locobot/joint_states', JointState, self.joint_state_callback)
         rospy.Subscriber('/locobot/camera/color/image_raw', Image, self.camera_callback)
-        self.onto = rdflib.Graph().parse('thrash.owl')
         self.dir = os.getcwd()
         # Set up cv_bridge for image conversion
         self.bridge = CvBridge()
@@ -34,7 +35,7 @@ class KnowledgeGraphBuilder:
         self.soma = rdflib.Namespace("http://www.ease-crc.org/ont/SOMA.owl#")
         self.time = rdflib.Namespace("https://www.w3.org/TR/2022/CRD-owl-time-20221115#")
         self.locobotNS = rdflib.Namespace('http://example.com/locobot#')
-
+        self.onto = rdflib.Graph().parse(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'trash.owl'))
         # Set up some constants
         self.panValue = 0
         self.counter = 0
@@ -47,9 +48,11 @@ class KnowledgeGraphBuilder:
         self.kgFormat = 'ttl'
         self.kgPath, self.imgPath = self.create_dir()
         self.recordedGraphs = []
-
+        self.listOfObjects = []
         # Set the publishing rate
         self.rate = rospy.Rate(100) # 1 Hz
+        self.objects = {}
+        self.get_objects()
 
 
     def build_stream(self):
@@ -57,6 +60,12 @@ class KnowledgeGraphBuilder:
             #rospy.loginfo(self.graph)
             # Sleep to maintain the publishing rate
             self.rate.sleep()
+
+
+    def get_objects(self):
+        for subj, pred, obj in self.onto:
+            if pred == self.rdfs.label:
+                self.objects[obj.lower()] = subj
 
 
     def construct_graph(self, data):
@@ -68,7 +77,6 @@ class KnowledgeGraphBuilder:
         pan_joint_value = rdflib.Literal(self.panValue)
         img_name = os.path.join(self.imgPath, 'image' + str(timestamp) + '.jpg')
         imgNode = rdflib.URIRef('http://example.com/locobot/images#' + img_name)
-        #graph.add((timestamp, self.rdf.type, self.sosa.ResultTime))
         
         graph.add((imgNode, self.time.hasTime, timestamp))
         graph.add((self.locobotNS.pan, self.locobotNS.hasJointValue, pan_joint_value))
@@ -76,7 +84,10 @@ class KnowledgeGraphBuilder:
 
         for obj in data.models:
             # Crreate a class for the object type
-            obj_class = rdflib.URIRef('http://example.com/object#' + obj.type)
+            if obj.type in ['coke_can_0', 'coke_can']: obj_class = 'can'
+            elif obj.type == 'Suitcase1': obj_class = 'suitcase'
+            else: obj_class = obj.type.lower()
+            obj_class = self.objects[obj_class]
             subj = rdflib.URIRef('http://example.com/object#' + obj.type + str(self.counter))
             
             pos = rdflib.Literal(obj.pose.position)
@@ -97,7 +108,7 @@ class KnowledgeGraphBuilder:
         
         if self.image is not None and not self.done:
             cv2.imwrite(img_name, self.image)
-            rospy.loginfo('Image saved')
+            #rospy.loginfo('Image saved')
 
     def create_dir(self):
         # Get the current directory where the script is located
