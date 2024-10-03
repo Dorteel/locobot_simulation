@@ -62,17 +62,18 @@ class KnowledgeGraphBuilder:
         self.graph = rdflib.Graph()
         # Get current time and date
         ts = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S-%f")
+        obs = rdflib.URIRef('http://example.com/locobot/Observation#' + ts)
         rospy.loginfo(self.dir)
         # Create filename with current time and date
         timestamp = rdflib.Literal(ts)
         img_name = 'streams/images/image' + str(timestamp) + '.jpg'
         imgNode = rdflib.Literal(img_name)
-        self.graph.add((timestamp, self.rdf.type, self.sosa.ResultTime))
+        self.graph.add((obs, self.time.hasTime, timestamp))
         pan_joint_value = rdflib.Literal(self.panValue)
         self.graph.add((imgNode, self.time.hasTime, timestamp))
-        self.graph.add((pan_joint_value, self.rdf.type, self.sosa.Observation))
+        self.graph.add((obs, self.rdf.type, self.sosa.Observation))
         self.graph.add((self.pan, self.hasJointValue, pan_joint_value))
-        self.graph.add((pan_joint_value, self.time.hasTime, timestamp))
+        self.graph.add((self.pan, self.time.hasTime, pan_joint_value))
         self.graph.add((self.pan, self.rdf.type, self.sosa.Actuator))
 
         for obj in data.models:
@@ -103,13 +104,9 @@ class KnowledgeGraphBuilder:
 
 
     def save_stream(self):
-        csv_file = "streams/stream_reasoning_bsc.csv"
-        with open(csv_file, mode="w", newline="") as file:
-            writer = csv.writer(file)
-                
-            for kg, ts in self.recordedGraphs:
-                for s, p, o in kg:
-                    writer.writerow([ts, s.n3(), p.n3(), o.n3()])
+        for kg, ts in self.recordedGraphs:
+            filename = str(ts) + '.ttl'
+            kg.serialize(destination='streams' + filename, format='turtle')
 
     def joint_state_callback(self, data):
         if 'pan' in data.name:
