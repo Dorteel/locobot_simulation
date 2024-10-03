@@ -654,18 +654,18 @@
       <pose>0.639024 -0.167973 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>264 162000000</sim_time>
-      <real_time>84 854659366</real_time>
-      <wall_time>1685016766 704351993</wall_time>
-      <iterations>84509</iterations>
+      <sim_time>456 759000000</sim_time>
+      <real_time>35 708535041</real_time>
+      <wall_time>1686821869 770540531</wall_time>
+      <iterations>30654</iterations>
       <model name='Chair'>
-        <pose>1.36315 1.91757 0.000918 1e-06 5.2e-05 -5e-05</pose>
+        <pose>1.98645 2.41853 0.000912 1e-05 -1e-06 -3.14074</pose>
         <scale>1 1 1</scale>
         <link name='body'>
-          <pose>1.36315 1.91757 0.000918 5.2e-05 -1e-06 1.57075</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-1.4e-05 2.6e-05 -0.970262 -2.47082 -1.56923 1e-06</acceleration>
-          <wrench>-1.4e-05 2.6e-05 -0.970262 0 -0 0</wrench>
+          <pose>1.98645 2.41853 0.000912 -1e-06 -1e-05 -1.56994</pose>
+          <velocity>0 0 0.00299 -0.00912 0.000662 0</velocity>
+          <acceleration>2e-06 -2.6e-05 -3.85509 1.66261 1.05804 4e-06</acceleration>
+          <wrench>2e-06 -2.6e-05 -3.85509 0 -0 0</wrench>
         </link>
       </model>
       <model name='Suitcase1'>
@@ -678,14 +678,24 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='bowl'>
-        <pose>0.970934 -0.323583 0.000912 2.1e-05 1.5e-05 -0.257005</pose>
+      <model name='beer'>
+        <pose>1.42879 0.79159 0.000911 7e-06 3.3e-05 0.000135</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>0.970934 -0.323583 0.000912 2.1e-05 1.5e-05 -0.257005</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.505458 1.25376 12.7219 2.76013 -1.52196 -0.424355</acceleration>
-          <wrench>-0.050546 0.125376 1.27218 0 -0 0</wrench>
+          <pose>1.42879 0.791589 0.115911 7e-06 3.3e-05 0.000135</pose>
+          <velocity>5e-06 -0 8e-06 1e-05 4.3e-05 -1.7e-05</velocity>
+          <acceleration>-0.006134 0.000961 -9.78563 0.000281 -0.054308 -0.017424</acceleration>
+          <wrench>-0.002392 0.000375 -3.81639 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='bowl'>
+        <pose>2.63999 0.837365 0.000904 -1.3e-05 -4.8e-05 -0.009925</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.63999 0.837365 0.000904 -1.3e-05 -4.8e-05 -0.009925</pose>
+          <velocity>-0 -1e-06 -0.009824 -2e-05 0.000268 -1.2e-05</velocity>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -0.98 0 -0 0</wrench>
         </link>
       </model>
       <model name='cafe'>
@@ -699,23 +709,23 @@
         </link>
       </model>
       <model name='coke_can'>
-        <pose>0.804536 0.849809 0.032442 -1.56314 0.183951 3.08277</pose>
+        <pose>0.804451 0.849864 0.032415 -1.56155 0.186672 3.08309</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>0.804536 0.849809 0.032442 -1.56314 0.183951 3.08277</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.270001 -0.033249 -0.0016 2.11848 1.27197 -0.162444</acceleration>
-          <wrench>0.1053 -0.012967 -0.000624 0 -0 0</wrench>
+          <pose>0.804451 0.849864 0.032415 -1.56155 0.186672 3.08309</pose>
+          <velocity>-4.3e-05 3e-06 1e-06 -0.000104 -0.001329 1.4e-05</velocity>
+          <acceleration>-1.9e-05 2e-06 1e-06 -0.000131 -0.001894 1.4e-05</acceleration>
+          <wrench>-8e-06 1e-06 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='coke_can_0'>
-        <pose>0.87547 0.335365 0.033104 -1.5726 -0.502526 0.097425</pose>
+        <pose>0.873026 0.335089 0.033193 -1.57114 -0.576426 0.096044</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>0.87547 0.335365 0.033104 -1.5726 -0.502526 0.097425</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-1.2e-05 -0 -1e-06 9.1e-05 -0.001152 0</acceleration>
-          <wrench>-5e-06 -0 -0 0 -0 0</wrench>
+          <pose>0.873026 0.335089 0.033193 -1.57114 -0.576426 0.096044</pose>
+          <velocity>-0.000384 -3.8e-05 3e-06 0.001154 -0.011511 -0.000105</velocity>
+          <acceleration>-0.203487 -0.02078 0.003135 1.93556 -0.829772 -0.01402</acceleration>
+          <wrench>-0.07936 -0.008104 0.001222 0 -0 0</wrench>
         </link>
       </model>
       <model name='ground_plane'>
@@ -728,6 +738,16 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+      <model name='lemon'>
+        <pose>2.62935 0.867419 0.027926 0.627305 0.305168 1.53379</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.62935 0.867419 0.027926 0.627305 0.305168 1.53379</pose>
+          <velocity>-9.7e-05 -8.7e-05 -0.000402 -0.010935 0.013277 -0.001324</velocity>
+          <acceleration>0 0 -9.8 -1.7e-05 -1.2e-05 1.9e-05</acceleration>
+          <wrench>0 0 -0.000949 0 -0 0</wrench>
+        </link>
+      </model>
       <model name='milk'>
         <pose>1.20429 0.083932 0.00196 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -736,6 +756,26 @@
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='orange'>
+        <pose>0.733609 0.217569 -0.000586 -0.395833 0.166964 -2.21599</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>0.733609 0.217569 -0.000586 -0.395833 0.166964 -2.21599</pose>
+          <velocity>-2e-06 7e-06 0.001595 0.004572 0.001652 0.000131</velocity>
+          <acceleration>-0.004966 0.013759 3.18898 -0.12842 -0.037198 3.09747</acceleration>
+          <wrench>-1e-06 3e-06 0.000646 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='peach'>
+        <pose>0.913634 -0.121933 -0.003109 0.278744 0.432091 -0.233464</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>0.913634 -0.121933 -0.003109 0.278744 0.432091 -0.233464</pose>
+          <velocity>-0.0005 -0.000571 -0.001646 -0.128926 0.132829 -0.006929</velocity>
+          <acceleration>-0.604594 -0.449058 -1.69746 2.35616 -0.77368 0.727452</acceleration>
+          <wrench>-7.1e-05 -5.3e-05 -0.000199 0 -0 0</wrench>
         </link>
       </model>
       <model name='salt'>
@@ -748,13 +788,23 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+      <model name='strawberry'>
+        <pose>2.58881 0.823287 0.033204 0.66611 0.156941 0.985213</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.58881 0.823287 0.033204 0.66611 0.156941 0.985213</pose>
+          <velocity>2.8e-05 1.1e-05 -0.000389 0.003961 -0.007181 -0.00022</velocity>
+          <acceleration>0 0 -9.8 -3e-06 -2e-06 8e-06</acceleration>
+          <wrench>0 0 -0.000474 0 -0 0</wrench>
+        </link>
+      </model>
       <light name='sun'>
         <pose>0 0 10 0 -0 0</pose>
       </light>
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>4.42373 -0.272452 0.934341 0 0.359643 -2.95499</pose>
+        <pose>-1.3443 0.670162 1.22017 -0 0.379644 -0.204623</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -845,6 +895,251 @@
         <kinematic>0</kinematic>
       </link>
       <pose>1.36318 1.91753 0 0 -0 0</pose>
+    </model>
+    <model name='beer'>
+      <link name='link'>
+        <pose>0 0 0.115 0 -0 0</pose>
+        <inertial>
+          <mass>0.39</mass>
+          <inertia>
+            <ixx>0.00058</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.00058</iyy>
+            <iyz>0</iyz>
+            <izz>0.00019</izz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.055</radius>
+              <length>0.23</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.055</radius>
+              <length>0.23</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <uri>https://fuel.ignitionrobotics.org/1.0/caguero/models/beer/2/files/materials/scripts</uri>
+              <uri>https://fuel.ignitionrobotics.org/1.0/caguero/models/beer/2/files/materials/textures</uri>
+              <name>Beer/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>1.4288 0.791583 0 0 -0 0</pose>
+    </model>
+    <model name='orange'>
+      <pose>0.73346 0.206861 0.033634 -1.83141 0.386611 2.97317</pose>
+      <link name='link'>
+        <inertial>
+          <inertia>
+            <ixx>1.09679e-07</ixx>
+            <ixy>-1.79434e-24</ixy>
+            <ixz>4.94318e-24</ixz>
+            <iyy>1.07389e-07</iyy>
+            <iyz>1.64916e-23</iyz>
+            <izz>1.06575e-07</izz>
+          </inertia>
+          <mass>0.000202723</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>/home/user/.ignition/fuel/fuel.ignitionrobotics.org/gambit/models/orange/3/textured.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>/home/user/.ignition/fuel/fuel.ignitionrobotics.org/gambit/models/orange/3/textured.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='peach'>
+      <pose>0.731627 0.127865 3 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <inertia>
+            <ixx>4.58765e-08</ixx>
+            <ixy>-6.82467e-24</ixy>
+            <ixz>4.97606e-24</ixz>
+            <iyy>4.44404e-08</iyy>
+            <iyz>-3.03756e-24</iyz>
+            <izz>4.09827e-08</izz>
+          </inertia>
+          <mass>0.000117214</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>/home/user/.ignition/fuel/fuel.ignitionrobotics.org/gambit/models/peach/2/textured.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>/home/user/.ignition/fuel/fuel.ignitionrobotics.org/gambit/models/peach/2/textured.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='lemon'>
+      <pose>2.54938 -0.182317 3 2.14159 -1.14159 -3.14159</pose>
+      <link name='link'>
+        <inertial>
+          <inertia>
+            <ixx>3.41086e-08</ixx>
+            <ixy>-1.4026e-24</ixy>
+            <ixz>-6.65737e-24</ixz>
+            <iyy>3.39372e-08</iyy>
+            <iyz>4.27657e-24</iyz>
+            <izz>2.78577e-08</izz>
+          </inertia>
+          <mass>9.68345e-05</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>/home/user/.ignition/fuel/fuel.ignitionrobotics.org/gambit/models/lemon/2/textured.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>/home/user/.ignition/fuel/fuel.ignitionrobotics.org/gambit/models/lemon/2/textured.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='strawberry'>
+      <pose>2.5825 -0.336911 3 -2 0 0</pose>
+      <link name='link'>
+        <inertial>
+          <inertia>
+            <ixx>1.11429e-08</ixx>
+            <ixy>-9.25193e-25</ixy>
+            <ixz>-2.05228e-24</ixz>
+            <iyy>1.01061e-08</iyy>
+            <iyz>4.2342e-25</iyz>
+            <izz>9.08681e-09</izz>
+          </inertia>
+          <mass>4.83234e-05</mass>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>/home/user/.ignition/fuel/fuel.ignitionrobotics.org/gambit/models/strawberry/2/textured.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>/home/user/.ignition/fuel/fuel.ignitionrobotics.org/gambit/models/strawberry/2/textured.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
     </model>
   </world>
 </sdf>
