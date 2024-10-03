@@ -88,18 +88,18 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>153 534000000</sim_time>
-      <real_time>500 548301542</real_time>
-      <wall_time>1727961957 931497180</wall_time>
-      <iterations>153534</iterations>
+      <sim_time>207 385000000</sim_time>
+      <real_time>54 126962991</real_time>
+      <wall_time>1727962202 589570432</wall_time>
+      <iterations>53851</iterations>
       <model name='blue_target_area'>
-        <pose>-0.75 -1 0.005 0 -0 -0.009292</pose>
+        <pose>0.75 -1 0.005 0 0 -0.009292</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-0.75 -1 0.005 0 -0 -0.009292</pose>
+          <pose>0.75 -1 0.005 0 0 -0.009292</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 -0 0 4.3e-05 -4.3e-05 -0</acceleration>
-          <wrench>-0 -0 0 0 -0 0</wrench>
+          <acceleration>0 0 -0 -4.3e-05 4.3e-05 -0</acceleration>
+          <wrench>0 0 -0 0 -0 0</wrench>
         </link>
       </model>
       <model name='ground_plane'>
@@ -113,10 +113,10 @@
         </link>
       </model>
       <model name='red_target_area'>
-        <pose>-0.75 1 0.005 0 -0 -0.022172</pose>
+        <pose>0.75 1 0.005 0 -0 -0.022172</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-0.75 1 0.005 0 -0 -0.022172</pose>
+          <pose>0.75 1 0.005 0 -0 -0.022172</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>-0 -0 0 4.2e-05 -4.4e-05 0</acceleration>
           <wrench>-0 -0 0 0 -0 0</wrench>
@@ -332,7 +332,7 @@
     </model>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>1.62868 -0.195436 2.52648 0 0.894192 3.00226</pose>
+        <pose>-3.29807 -0.978006 2.01596 0 0.558192 0.09026</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
